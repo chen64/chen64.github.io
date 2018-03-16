@@ -1,1 +1,111 @@
-hello world
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Trivia</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/css/style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>Totally Trivial Trivia</h1>
+    <button id="startGame">Start</button>
+    
+    <div id="wrapper">
+        <p>Time left: <span id="timer"></span></p>
+            <div id="qList">
+                <p>What was the first console video game that allowed the game to be saved?</p>
+                    <div>
+                        <input type="radio" id="Choice1" name="Q1" value="right">
+                        <label for="Choice1">Legend of Zelda</label>
+                        <input type="radio" id="Choice2" name="Q1" value="wrong">
+                        <label for="Choice2">Super Mario World</label>
+                        <input type="radio" id="Choice3" name="Q1" value="wrong">
+                        <label for="Choice3">Final Fantasy</label>
+                        <input type="radio" id="Choice4" name="Q1" value="wrong">
+                        <label for="Choice4">Street Fighter</label>
+                    </div>
+                <p>Regarding data storage, what does the acronym SSD stand for?</p>
+                    <div>
+                        <input type="radio" id="Choice1" name="Q2" value="right">
+                        <label for="cChoice1">Solid State Drive</label>
+                        <input type="radio" id="Choice2" name="Q2" value="wrong">
+                        <label for="Choice2">Second Storage Device</label>
+                        <input type="radio" id="Choice3" name="Q2" value="wrong">
+                        <label for="Choice3">Safe Storage Device</label>
+                        <input type="radio" id="Choice4" name="Q2" value="wrong">
+                        <label for="Choice4">Security Storage Device</label>
+                    </div>
+                <p>Created in 2009, what was the first decentralized cryptocurrency?</p>
+                    <div>
+                        <input type="radio" id="Choice1" name="Q3" value="wrong">
+                        <label for="Choice1">Litecoin</label>
+                        <input type="radio" id="Choice2" name="Q3" value="right">
+                        <label for="Choice2">Bitcoin</label>
+                        <input type="radio" id="Choice3" name="Q3" value="wrong">
+                        <label for="Choice3">Ethereum</label>
+                        <input type="radio" id="Choice4" name="Q3" value="wrong">
+                        <label for="Choice4">Ripple</label>
+                    </div>
+                <p>What does the acronym USB stand for when referring to a computer port?</p>
+                    <div>
+                        <input type="radio" id="Choice1" name="Q4" value="wrong">
+                        <label for="Choice1">Ultra Safe Button</label>
+                        <input type="radio" id="Choice2" name="Q4" value="wrong">
+                        <label for="Choice2">Unicode Safe Bus</label>
+                        <input type="radio" id="Choice3" name="Q4" value="wrong">
+                        <label for="Choice3">Ultra Safe Bus</label>
+                        <input type="radio" id="Choice4" name="Q4" value="right">
+                        <label for="Choice4">Universal Serial Bus</label>
+                    </div>
+                <p>When referring to a computer monitor, whwat does the acronym LCD stand for?</p>
+                    <div>
+                        <input type="radio" id="Choice1" name="Q5" value="wrong">
+                        <label for="Choice1">Light Color Display</label>
+                        <input type="radio" id="Choice2" name="Q5" value="wrong">
+                        <label for="Choice2">Light Computer Display</label>
+                        <input type="radio" id="Choice3" name="Q5" value="right">
+                        <label for="Choice3">Liquid Crystal Display</label>
+                        <input type="radio" id="Choice4" name="Q5" value="wrong">
+                        <label for="Choice4">Liquid Color Display</label>
+                    </div>
+                <p>When talking about computer memory, what does the acronym ROM stand for?</p>
+                    <div>
+                        <input type="radio" id="Choice1" name="Q6" value="wrong">
+                        <label for="Choice1">Read Online Memory</label>
+                        <input type="radio" id="Choice2" name="Q6" value="wrong">
+                        <label for="Choice2">Random Only Memory</label>
+                        <input type="radio" id="Choice3" name="Q6" value="right">
+                        <label for="Choice3">Read Only Memory</label>
+                        <input type="radio" id="Choice4" name="Q6" value="wrong">
+                        <label for="Choice4">Reedit Only Memory</label>
+                    </div>
+                <p>In a photo editing program, what do the letters RGB stand for?</p>
+                    <div>
+                        <input type="radio" id="Choice1" name="Q7" value="wrong">
+                        <label for="Choice1">Red, Green, Blink</label>
+                        <input type="radio" id="Choice2" name="Q7" value="wrong">
+                        <label for="Choice2">Read, Green, Books</label>
+                        <input type="radio" id="Choice3" name="Q7" value="wrong">
+                        <label for="Choice3">Redo, Gradient, Brush</label>
+                        <input type="radio" id="Choice4" name="Q7" value="right">
+                        <label for="Choice4">Red, Green, Blue</label>
+                    </div>
+                    <br>
+                    <button id="doneButton">Done</button>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="results"></div>
+    <div id="results2"></div>
+    <div id="results3"></div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>
+</html>
